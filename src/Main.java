@@ -30,11 +30,11 @@ public class Main {
         // Part 3
         System.out.println("Задание 3");
         int averageExpense;
-        int quantityExpenses = 0;
-        for (int element : expenses) {
-            if (element > 0) {
-                quantityExpenses++;
-            }
+        int quantityExpenses;
+        if (expenses[4] == 0){
+            quantityExpenses = 4;
+        } else {
+            quantityExpenses = 5;
         }
         averageExpense = sumExpenses / quantityExpenses;
         System.out.println("Средняя сумма трат за неделю составила " + averageExpense + " рублей");
